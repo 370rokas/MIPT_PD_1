@@ -1,5 +1,6 @@
 package com.example.mipt_pd_1
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -20,10 +21,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val knopke = findViewById<Button>(R.id.button);
+        val spalvosKnopke = findViewById<Button>(R.id.button2);
         val textas = findViewById<TextView>(R.id.textView);
 
         knopke.setOnClickListener {
             textas.text = "labas krabas";
+        }
+
+        spalvosKnopke.setOnClickListener {
+            textas.setTextColor(Color.MAGENTA);
         }
     }
 }
