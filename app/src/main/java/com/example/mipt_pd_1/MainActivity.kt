@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        // Komentaras
+
         val knopke = findViewById<Button>(R.id.button);
         val spalvosKnopke = findViewById<Button>(R.id.button2);
         val fonoKnopke = findViewById<Button>(R.id.button3);
