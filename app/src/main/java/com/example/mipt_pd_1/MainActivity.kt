@@ -1,6 +1,8 @@
 package com.example.mipt_pd_1
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,13 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val knopke = findViewById<Button>(R.id.button);
+        val textas = findViewById<TextView>(R.id.textView);
+
+        knopke.setOnClickListener {
+            textas.text = "labas krabas";
         }
     }
 }
