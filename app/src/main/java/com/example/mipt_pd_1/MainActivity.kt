@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         val knopke = findViewById<Button>(R.id.button);
         val spalvosKnopke = findViewById<Button>(R.id.button2);
+        val fonoKnopke = findViewById<Button>(R.id.button3);
+
         val textas = findViewById<TextView>(R.id.textView);
 
         knopke.setOnClickListener {
@@ -30,6 +32,10 @@ class MainActivity : AppCompatActivity() {
 
         spalvosKnopke.setOnClickListener {
             textas.setTextColor(Color.MAGENTA);
+        }
+
+        fonoKnopke.setOnClickListener {
+            textas.setBackgroundColor(Color.CYAN);
         }
     }
 }
